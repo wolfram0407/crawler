@@ -12,5 +12,13 @@ const initBrowser = async () => {
   const browser = await initBrowser();
   const page = await browser.newPage();
 
-  await browser.close();
+  await page.goto("https://www.saucedemo.com");
+  // select # 필요
+  await page.type("#user-name", "standard_user");
+  await page.type("#password", "secret_sauce");
+
+  await page.click("#login-button");
+
+
+  //await browser.close();
 })();

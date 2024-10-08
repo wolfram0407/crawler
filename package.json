@@ -1,14 +1,19 @@
 {
-  "scripts": {   
+  "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/index"
   },
   "dependencies": {
-    "firebase": "10.1.0",
-    "node-schedule": "2.1.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.14.0",
+    "firebase-tools": "^13.21.0",
+    "global": "^4.4.0",
+    "node-schedule": "^2.1.1",
     "puppeteer": "21.0.1",
     "ts-node": "10.9.1"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node-schedule": "^2.1.7",
     "@types/puppeteer": "7.0.4",
     "tsconfig-paths": "4.2.0",
     "typescript": "5.1.6"
